@@ -256,7 +256,7 @@ tr.q td:first-child {
 .pl i {
     display: block;
     font-style: normal;
-    font-size: 9px;
+    font-size: 10px;
     color: #F3EAD2;
     text-shadow: 0 1px 2px #000;
     white-space: nowrap
@@ -294,7 +294,15 @@ tr.q td:first-child {
 }
 
 .radio p {
-    margin: 0 0 6px
+    margin: 0 0 6px;
+    animation: ri .45s
+}
+
+@keyframes ri {
+    from {
+        opacity: 0;
+        transform: translateX(-8px)
+    }
 }
 
 .radio .gol {
@@ -470,7 +478,8 @@ tr.q td:first-child {
     .gool,
     .gool *,
     .pitch.sh,
-    .pl b {
+    .pl b,
+    .radio p {
         animation: none !important
     }
 }
